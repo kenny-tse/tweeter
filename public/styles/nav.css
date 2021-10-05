@@ -1,6 +1,9 @@
 
 nav {
-  flex: 1;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 120px;
   font-size: 40px;
   margin: 0;
@@ -11,15 +14,12 @@ nav {
 }
 
 .tweeter {
-  display: flex;
   font-family: bungee;
-  align-self: center;
   padding-left: 1.5em;
   padding-top: 0.5em;
 }
 
 .right-part-of-nav {
-  display: flex;
   font-size: 20px;
   font-family: Source Sans Pro;
   margin-left: auto;
@@ -27,7 +27,7 @@ nav {
   padding-right: 1.5em;
 }
 
-.write {
+/* .write {
   display: flex;
   font-weight: 600;
   font-size: 20px;
@@ -35,13 +35,12 @@ nav {
   margin-left: auto;
   align-items: center;
   padding-right: 0.30em;
-}
+} */
 
 .fa-angle-double-down:before {
-
   color: red;
   font-size: 20px;
-
+  padding-left: 3.3em;
 }
 
 /* navbar stuff */
