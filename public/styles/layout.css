@@ -20,6 +20,38 @@ body {
   font-size: 24px;
 }
 
+.container {
+  font-family: Source Sans Pro;
+  max-width: 90%;
+  background-color: #f4f1ec;
+  margin: auto;
+
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.question {
+  font-weight: 600;
+}
+
+.tweet-button {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  font-family: bungee;
+}
+
+.letter-counter{
+  float:right;
+  font-family: bungee;
+}
+
+
+.text-area{
+  
+  width: 100%;
+  border-bottom: 5px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}

@@ -1,0 +1,45 @@
+
+nav {
+  flex: 1;
+  height: 120px;
+  font-size: 40px;
+  margin: 0;
+  color: #FFFFFF;
+  display: flex;
+  background-color: #4056A1;
+  z-index : 1;
+}
+
+.tweeter {
+  display: flex;
+  font-family: bungee;
+  align-self: center;
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+}
+
+.right-part-of-nav {
+  display: flex;
+  font-size: 20px;
+  font-family: Source Sans Pro;
+  margin-left: auto;
+  align-items: center;
+  padding-right: 1.5em;
+}
+
+.write {
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Source Sans Pro;
+  margin-left: auto;
+  align-items: center;
+  padding-right: 0.30em;
+}
+
+.fa-angle-double-down:before {
+
+  color: red;
+  font-size: 20px;
+
+}

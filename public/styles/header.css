@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  height: 400px;
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  font-family: Source Sans Pro;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cc9200;
+  background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
+}
+
+.surname{
+  font-weight: 300;
+  font-family: Source Sans Pro;
+}
