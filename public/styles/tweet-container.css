@@ -1,0 +1,71 @@
+.individual-tweet{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.individual-tweet:hover{
+  box-shadow: 5px 5px grey;
+
+}
+
+.individual-tweet-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+.profile-picture{
+  width: 60px;
+}
+
+.first-name{
+  flex-basis: 87%;
+}
+
+.person-handle{
+  margin-right: 1em;
+  color:cornflowerblue;
+}
+
+.tweet-thoughts{
+  font-weight: 600;
+  width: 100%;
+  border-bottom: 5px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+.individual-tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.date{
+  margin-left: 0.75em;
+  margin-top: 0.5em;
+}
+
+.tweet-icons{
+  color: #4056A1;
+  margin-right: 0.75em;
+  margin-top: 0.5em;
+}
+
+.fa-flag:hover {
+  color: darkorange;
+}
+
+.fa-retweet:hover {
+  color: darkorange;
+}
+
+.fa-heart:hover {
+  color: darkorange;
+}
