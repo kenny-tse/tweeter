@@ -4,40 +4,16 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function () {
-  // Test / driver code (temporary). Eventually will get this from the server.
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd"
-      },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ]
 
+  // loops through tweets
+  // calls createTweetElement for each tweet
+  // takes return value and appends it to the tweets container
   const renderTweets = function (tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
+    $(".tweet-container").empty();
+
     for (const tweet in tweets) {
 
-      $('#tweets-container').append(createTweetElement(tweets[tweet]));
+      $('#tweets-container').prepend(createTweetElement(tweets[tweet]));
     }
   }
 
@@ -55,12 +31,14 @@ $(document).ready(function () {
     $tweetHeader.append($personHandle);
     $tweet.append($tweetHeader);
 
-    let $textArea = $(`<textarea class="tweet-thoughts">${tweet.content.text}</textarea>`)
+    // prevent XSS with escaping 
+    // let $textArea = $(`<p class="tweet-thoughts">${tweet.content.text}</p>`)
+    let $textArea = $(`<p class="tweet-thoughts">`).text(tweet.content.text);
     $tweet.append($textArea);
 
     let $footer = $(`<footer class="individual-tweet-footer"></footer>`)
 
-    let $date = $(`<div class="date">10 Days ago</div>`);
+    let $date = $(`<div class="date">${timeago.format(tweet.created_at)}</div>`);
     let $tweetIcons = $(`<div class="tweet-icons">`)
 
     let $flagIcon = $(`<i class="fas fa-flag"></i>`);
@@ -97,6 +75,25 @@ $(document).ready(function () {
 
     event.preventDefault();
 
+    let $textAreaToShow = $(".text-area");
+    let stringToValidate = $textAreaToShow.val();
+
+    if (stringToValidate === null) {
+      // alert("Tweet cannot be null!");
+
+      return;
+    }
+
+    if (stringToValidate === "") {
+      // alert("Tweet cannot be empty!");
+      return;
+    }
+
+    if (stringToValidate.length > 140) {
+      // alert("Tweet is too long!");
+      return;
+    }
+
     let url = "http://localhost:8080/tweets/"
     let queryString = $("form").serialize();
 
@@ -105,5 +102,11 @@ $(document).ready(function () {
       method: "POST",
       data: queryString
     })
+
+    $textAreaToShow.val("");
+
+    loadTweets();
+
   });
+
 });
