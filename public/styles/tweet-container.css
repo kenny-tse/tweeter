@@ -20,10 +20,12 @@
 
 .profile-picture{
   width: 60px;
+  margin-left: 0.8em;
 }
 
 .first-name{
-  flex-basis: 87%;
+  flex-basis: 100%;
+  margin-left: 0.5em;
 }
 
 .person-handle{
@@ -38,6 +40,7 @@
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
+  padding-left: 1em;
 }
 
 .individual-tweet-footer{
@@ -48,13 +51,13 @@
 
 .date{
   margin-left: 0.75em;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .tweet-icons{
   color: #4056A1;
   margin-right: 0.75em;
-  margin-top: 0.5em;
+  margin-top: 0.2em;
 }
 
 .fa-flag:hover {
