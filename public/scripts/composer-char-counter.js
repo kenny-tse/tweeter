@@ -2,7 +2,7 @@ $(document).ready(function () {
   // --- our code goes here ---
   const maxOfCharacters = 140;
 
-  $(".text-area").on("input", function (e) {
+  $(".text-area").on("input", function (event) {
 
     let letterCounterClass = $(this).closest(".new-tweet").find(".counter");
 

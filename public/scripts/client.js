@@ -79,6 +79,31 @@ $(document).ready(function () {
     return $tweet;
   }
 
-  renderTweets(data);
+  const loadTweets = function () {
 
+    $.ajax({
+      url: "http://localhost:8080/tweets",
+      method: "GET",
+    }).then((data) => {
+
+      renderTweets(data);
+
+    })
+  }
+
+  loadTweets();
+
+  $("form").on("submit", function (event) {
+
+    event.preventDefault();
+
+    let url = "http://localhost:8080/tweets/"
+    let queryString = $("form").serialize();
+
+    $.ajax({
+      url: url,
+      method: "POST",
+      data: queryString
+    })
+  });
 });
