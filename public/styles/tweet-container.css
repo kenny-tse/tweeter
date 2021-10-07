@@ -57,9 +57,12 @@
 }
 
 .tweet-icons{
+  display: flex;
+  align-self: flex;
   color: #4056A1;
-  margin-right: 0.75em;
-  margin-top: 0.2em;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
 }
 
 .fa-flag:hover {
