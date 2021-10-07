@@ -47,15 +47,47 @@ body {
 }
 
 .text-area{
-  
+  height: 50px;
   width: 100%;
   border-bottom: 5px solid black;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
+  margin: auto;
+}
+
+::placeholder {
+  color: black;
+  font-family: Source Sans Pro;
+  font-weight: 600;
 }
 
 .warning{
 
   color: red;
 }
+
+
+/* do this when screen is small (what you previously had) */
+@media only screen and(max-width: 1024px) {
+
+
+}
+
+/* do this when screen size is big (the yellow is on the side) */
+@media only screen and (min-width: 1025px){
+
+/* 
+  .orientation {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  } */
+
+  .container {
+    width:60%;
+    margin-right: 50px;
+  }
+
+} 
+

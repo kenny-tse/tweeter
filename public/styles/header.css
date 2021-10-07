@@ -1,19 +1,74 @@
-header {
-  display: flex;
-  height: 400px;
-  font-size: 18px;
-  margin: 0;
-  margin-top:120px;
-  color: white;
-  font-family: Source Sans Pro;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #cc9200;
-  background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
+  header {
+    display: flex;
+    background-image: url("https://www.transparenttextures.com/patterns/vichy.png");
+    height: 400px;
+    font-size: 18px;
+    color: white;
+    font-family: Source Sans Pro;
+  }
+
+  .surname{
+    font-weight: 300;
+    font-family: Source Sans Pro;
+  }
+
+  .your-full-name{
+    margin-top: 0px
+  }
+
+
+/* do this when screen is small (what you previously had) */
+@media only screen and (max-width: 1024px) {
+  header {
+    margin: 0;
+    margin-bottom:50px;
+    margin-top:0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cc9200;
+
+    /* this keeps header fixed to the top when the screen is smaller */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .your-picture {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 23px;
+  }
+
+  .orientation {
+    padding-top: 300px;
+  }
 }
 
-.surname{
-  font-weight: 300;
-  font-family: Source Sans Pro;
-}
+/* do this when screen size is big (the yellow is on the side) */
+@media only screen and (min-width: 1025px){
+
+  header {
+    width: 480px;
+    margin-left:70px;
+    margin-right:70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cc9200;
+  }
+  
+  .your-picture {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .orientation {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  }
+
+} 
+

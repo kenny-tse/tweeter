@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <!-- Disable viewport zooming -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
@@ -46,34 +49,36 @@
       <div class="write">Write</div> a new tweet <div>
         <i class="fas fa-angle-double-down"></i>
   </nav>
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h1>
-        Amy <span class="surname">Mansell</span>
-      </h1>
-    </div>
-  </header>
+  <h4 class="orientation">
+    <header id="header">
+      <div>
+        <img class="your-picture" src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h1 class="your-full-name">
+          Amy <span class="surname">Mansell</span>
+        </h1>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <div class="error-message"></div>
-      <h2>Compose Tweet</h2>
-      <form action="/tweets/" method="POST">
-        <label class="question" for="tweet-text">What are you humming about?</label> <br>
-        <textarea id="text-area" class="text-area" name="text" id="tweet-text"> </textarea>
-        <div>
-          <button class="tweet-button" type="submit">Tweet</button>
-          <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-    <section class="tweet-container" id="tweets-container">
-      <!-- <article class="individual-tweet">
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <div class="error-message"></div>
+        <!-- <h2>Compose Tweet</h2> -->
+        <form action="/tweets/" method="POST">
+          <!-- <label class="question" for="tweet-text">What are you humming about?</label> <br> -->
+          <textarea placeholder="What are you humming about?" id="text-area" class="text-area" name="text"
+            id="tweet-text"></textarea>
+          <div>
+            <button class="tweet-button" type="submit">Tweet</button>
+            <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="tweet-container" id="tweets-container">
+        <!-- <article class="individual-tweet">
         <h3 class="individual-tweet-header">
           <img class="profile-picture"
             src="https://previews.123rf.com/images/jemastock/jemastock1910/jemastock191007701/130928431-indian-young-boy-face-with-glasses-profile-picture-avatar-cartoon-character-portrait-in-black-and-wh.jpg">
@@ -90,8 +95,9 @@
           </div>
         </footer>
       </article> -->
-    </section>
-  </main>
+      </section>
+    </main>
+  </h4>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="/scripts/sticky-navbar.js"></script>
