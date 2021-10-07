@@ -1,75 +1,75 @@
-  .individual-tweet{
-    margin-top: 2em;
-    margin-bottom: 3em;
-    padding: 10px;
-    border: 5px solid black;
-  }
-  
-  .individual-tweet:hover{
-    box-shadow: 5px 5px grey;
-  }
-  
-  .individual-tweet-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 300;
-    margin-top: 0.5em;
-  }
-  
-  .profile-picture{
-    width: 60px;
-    margin-left: 0.8em;
-  }
-  
-  .first-name{
-    flex-basis: 100%;
-    margin-left: 0.5em;
-  }
-  
-  .person-handle{
-    margin-right: 1em;
-    color:cornflowerblue;
-  }
-  
-  .tweet-thoughts{
-    font-weight: 600;
-    width: 100%;
-    border-bottom: 5px solid black;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 0.3em;
-  }
-  
-  .individual-tweet-footer{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 300;
-  }
-  
-  .date{
-    margin-left: 0.75em;
-    margin-top: 0.2em;
-  }
-  
-  .tweet-icons{
-    color: #4056A1;
-    margin-right: 0.75em;
-    margin-top: 0.2em;
-  }
-  
-  .fa-flag:hover {
-    color: darkorange;
-  }
-  
-  .fa-retweet:hover {
-    color: darkorange;
-  }
-  
-  .fa-heart:hover {
-    color: darkorange;
-  }
+.individual-tweet{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.individual-tweet:hover{
+  box-shadow: 5px 5px grey;
+}
+
+.individual-tweet-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+.profile-picture{
+  width: 60px;
+  margin-left: 0.8em;
+}
+
+.first-name{
+  flex-basis: 100%;
+  margin-left: 0.5em;
+}
+
+.person-handle{
+  margin-right: 1em;
+  color:cornflowerblue;
+}
+
+.tweet-thoughts{
+  font-weight: 600;
+  width: 100%;
+  border-bottom: 5px solid black;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0.3em;
+}
+
+.individual-tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+.date{
+  margin-left: 0.75em;
+  margin-top: 0.2em;
+}
+
+.tweet-icons{
+  color: #4056A1;
+  margin-right: 0.75em;
+  margin-top: 0.2em;
+}
+
+.fa-flag:hover {
+  color: darkorange;
+}
+
+.fa-retweet:hover {
+  color: darkorange;
+}
+
+.fa-heart:hover {
+  color: darkorange;
+}

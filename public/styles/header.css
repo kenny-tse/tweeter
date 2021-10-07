@@ -5,6 +5,10 @@
     font-size: 18px;
     color: white;
     font-family: Source Sans Pro;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cc9200;
   }
 
   .surname{
@@ -20,18 +24,13 @@
 /* do this when screen is small (what you previously had) */
 @media only screen and (max-width: 1024px) {
   header {
-    margin: 0;
-    margin-bottom:50px;
-    margin-top:0px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: #cc9200;
 
     /* this keeps header fixed to the top when the screen is smaller */
     position: fixed;
     top: 0;
     width: 100%;
+    z-index : 1;
   }
 
   .your-picture {
@@ -41,7 +40,7 @@
   }
 
   .orientation {
-    padding-top: 300px;
+    padding-top: 400px;
   }
 }
 
@@ -52,10 +51,7 @@
     width: 480px;
     margin-left:70px;
     margin-right:70px;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: #cc9200;
   }
   
   .your-picture {
@@ -69,6 +65,5 @@
   padding-top: 50px;
   justify-content: center;
   }
-
 } 
 

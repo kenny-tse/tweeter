@@ -1,4 +1,20 @@
 
+nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  font-size: 40px;
+  margin: 0;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 .tweeter {
   font-family: bungee;
   padding-left: 1.5em;
@@ -34,47 +50,18 @@
 /* do this when screen is small (what you previously had) */
 @media only screen and (max-width: 1024px) {
 
-nav {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 120px;
-  font-size: 40px;
-  margin: 0;
-  color: #FFFFFF;
-  display: flex;
-  background-color: transparent;
-  z-index : 1;
-}
-
-
+  nav {
+    background-color: transparent;
+    z-index : 2;
+  }
 }
 
 /* do this when screen size is big (the yellow is on the side) */
 @media only screen and (min-width: 1025px){
 
-nav {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 120px;
-  font-size: 40px;
-  margin: 0;
-  color: #FFFFFF;
-  display: flex;
-  background-color: #4056A1;
-  z-index : 2;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-  .orientation {
+.orientation {
   display: flex;
   width: 100%;
   margin-top: 100px;
   }
-
 } 
