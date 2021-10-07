@@ -4,20 +4,20 @@ $(document).ready(function () {
 
   $(".text-area").on("input", function (event) {
 
-    let letterCounterClass = $(this).closest(".new-tweet").find(".counter");
+    let $letterCounterClass = $(this).closest(".new-tweet").find(".counter");
 
     numberOfCharacters = maxOfCharacters - $(this).val().length;
 
     if (numberOfCharacters < 0) {
-      letterCounterClass.addClass("warning");
+      $letterCounterClass.addClass("warning");
     }
 
     if (numberOfCharacters >= 0) {
-      letterCounterClass.removeClass("warning");
+      $letterCounterClass.removeClass("warning");
     }
 
     // can use -> let $numberToShow = $(".counter"); but bad practice?
-    let $numberToShow = $(letterCounterClass);
+    let $numberToShow = $($letterCounterClass);
     $numberToShow.val(numberOfCharacters);
 
   });

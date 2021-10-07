@@ -76,23 +76,26 @@ $(document).ready(function () {
     event.preventDefault();
 
     let $textAreaToShow = $(".text-area");
+
     let stringToValidate = $textAreaToShow.val();
 
+    let $errorMessage = $(".error-message");
+
     if (stringToValidate === null) {
-      // alert("Tweet cannot be null!");
-
+      $errorMessage.text("⚠  Your tweet cannot be null!  ⚠").slideDown(500);
       return;
     }
 
-    if (stringToValidate === "") {
-      // alert("Tweet cannot be empty!");
+    if (stringToValidate.trim() === "") {
+      $errorMessage.text("⚠  Your tweet has cannot be empty!  ⚠").slideDown(500);
       return;
     }
-
     if (stringToValidate.length > 140) {
-      // alert("Tweet is too long!");
+      $errorMessage.text("⚠  Your tweet has exceeded 140 characters!  ⚠").slideDown(500);
       return;
     }
+
+    $errorMessage.val("");
 
     let url = "http://localhost:8080/tweets/"
     let queryString = $("form").serialize();
@@ -105,8 +108,8 @@ $(document).ready(function () {
 
     $textAreaToShow.val("");
 
+    $errorMessage.slideUp(200)
+
     loadTweets();
-
   });
-
 });
