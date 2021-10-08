@@ -18,5 +18,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
+Tweeter has a great interface for the desktop!
 !["Tweeter has a great interface for the desktop!"](https://github.com/kenny-tse/tweeter/blob/master/public/screenshots/tweeter-big.PNG?raw=true) 
+
+Tweeter also has a great interface for when you're using a tablet!
 !["Tweeter also has a great interface for when you're using a tablet!"](https://github.com/kenny-tse/tweeter/blob/master/public/screenshots/tweeter-small.PNG?raw=true) 
