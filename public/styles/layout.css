@@ -46,10 +46,10 @@ body {
 .text-area{
   height: 50px;
   width: 100%;
+  border: none;
+  outline: none;
   border-bottom: 5px solid black;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
+  background-color: transparent;
   margin: auto;
 }
 
