@@ -29,8 +29,13 @@
 }
 
 .person-handle{
+  display: flex;
+  width: 100%;
   margin-right: 1em;
-  color:cornflowerblue;
+  color: cornflowerblue;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: flex-end;
 }
 
 .tweet-thoughts{

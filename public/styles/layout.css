@@ -25,7 +25,6 @@ body {
   max-width: 90%;
   background-color: #f4f1ec;
   margin: auto;
-
 }
 
 /*
@@ -60,10 +59,8 @@ body {
 }
 
 .warning{
-
   color: red;
 }
-
 
 /* show this layout when the screen is equal to or greater than 1025px in width */
 @media only screen and (min-width: 1025px){
