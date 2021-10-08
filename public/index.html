@@ -45,16 +45,16 @@
   <!-- Top nav bar (fixed) -->
   <nav id="navbar">
     <span class="tweeter">tweeter</span>
-    <div class="right-part-of-nav">
+    <button class="right-part-of-nav">
       <div class="write">Write</div> a new tweet <div>
         <i class="fas fa-angle-double-down"></i>
+    </button>
   </nav>
   <h4 class="orientation">
     <header id="header">
       <div>
         <img class="your-picture" src="/images/profile-hex.png">
       </div>
-      <br>
       <div>
         <h1 class="your-full-name">
           Amy <span class="surname">Mansell</span>
@@ -68,9 +68,7 @@
         <div class="error-message"></div>
         <!-- <h2>Compose Tweet</h2> -->
         <form action="/tweets/" method="POST">
-          <!-- <label class="question" for="tweet-text">What are you humming about?</label> <br> -->
-          <textarea placeholder="What are you humming about?" id="text-area" class="text-area" name="text"
-            id="tweet-text"></textarea>
+          <textarea placeholder="What are you humming about?" id="text-area" class="text-area" name="text"></textarea>
           <div>
             <button class="tweet-button" type="submit">Tweet</button>
             <output id="counter" name="counter" class="counter" for="tweet-text">140</output>
@@ -78,23 +76,6 @@
         </form>
       </section>
       <section class="tweet-container" id="tweets-container">
-        <!-- <article class="individual-tweet">
-        <h3 class="individual-tweet-header">
-          <img class="profile-picture"
-            src="https://previews.123rf.com/images/jemastock/jemastock1910/jemastock191007701/130928431-indian-young-boy-face-with-glasses-profile-picture-avatar-cartoon-character-portrait-in-black-and-wh.jpg">
-          <div class="first-name">Newton</div>
-          <div class="person-handle">@SirIsaac</div>
-        </h3>
-        <textarea class="tweet-thoughts">If I have seen further it is by standing on the shoulder of giants</textarea>
-        <footer class="individual-tweet-footer">
-          <div class="date">10 Days ago</div>
-          <div class="tweet-icons">
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </footer>
-      </article> -->
       </section>
     </main>
   </h4>

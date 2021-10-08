@@ -31,9 +31,6 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.question {
-  font-weight: 600;
-}
 
 .tweet-button {
   color: #FFFFFF;
@@ -68,7 +65,7 @@ body {
 }
 
 
-/* do this when screen size is big (the yellow is on the side) */
+/* show this layout when the screen is equal to or greater than 1025px in width */
 @media only screen and (min-width: 1025px){
 
   .container {

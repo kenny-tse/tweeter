@@ -17,6 +17,7 @@ $(document).ready(function () {
     }
   }
 
+  // takes a tweet object and inserts the key values into appropriate tags and returns the result
   const createTweetElement = function (tweet) {
 
     let $tweet = $(`<article class="individual-tweet"></article>`);
@@ -32,7 +33,7 @@ $(document).ready(function () {
     $tweet.append($tweetHeader);
 
     // prevent XSS with escaping 
-    // let $textArea = $(`<p class="tweet-thoughts">${tweet.content.text}</p>`)
+    // this will cause XSS -> let $textArea = $(`<p class="tweet-thoughts">${tweet.content.text}</p>`)
     let $textArea = $(`<p class="tweet-thoughts">`).text(tweet.content.text);
     $tweet.append($textArea);
 
@@ -57,6 +58,7 @@ $(document).ready(function () {
     return $tweet;
   }
 
+  //makes a GET request to the server to get tweet data
   const loadTweets = function () {
 
     $.ajax({
@@ -69,8 +71,10 @@ $(document).ready(function () {
     })
   }
 
+  // load already existing tweets onto page
   loadTweets();
 
+  //when TWEET button is pressed, goes through validation and sends a post request to the server and update the tweets to display
   $("form").on("submit", function (event) {
 
     event.preventDefault();
@@ -94,8 +98,6 @@ $(document).ready(function () {
       $errorMessage.text("⚠  Your tweet has exceeded 140 characters!  ⚠").slideDown(500);
       return;
     }
-
-    $errorMessage.val("");
 
     let url = "http://localhost:8080/tweets/"
     let queryString = $("form").serialize();

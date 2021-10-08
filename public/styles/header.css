@@ -21,7 +21,7 @@
   }
 
 
-/* do this when screen is small (what you previously had) */
+/* show this layout when the screen is less than or equal to 1024px in width */
 @media only screen and (max-width: 1024px) {
   header {
     background-color: #cc9200;
@@ -37,6 +37,7 @@
     width: 80%;
     margin-top: 30px;
     margin-left: 23px;
+    margin-bottom: 20px;
   }
 
   .orientation {
@@ -44,7 +45,7 @@
   }
 }
 
-/* do this when screen size is big (the yellow is on the side) */
+/* show this layout when the screen is equal to or greater than 1025px in width */
 @media only screen and (min-width: 1025px){
 
   header {
@@ -57,6 +58,7 @@
   .your-picture {
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .orientation {

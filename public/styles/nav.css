@@ -13,21 +13,28 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  padding: 1.5em;
 }
 
 .tweeter {
   font-family: bungee;
-  padding-left: 1.5em;
   padding-top: 0.5em;
 }
 
 .right-part-of-nav {
+  color: white;
   font-size: 20px;
   font-family: Source Sans Pro;
   margin-left: auto;
   align-items: center;
-  padding-right: 1.5em;
   display: inline-block;
+  border: none;
+  background-color: transparent;
+}
+
+.right-part-of-nav:focus {
+  border: none;
+  outline: none;
 }
 
 .write {
@@ -44,10 +51,9 @@ nav {
 .fa-angle-double-down:before {
   color: red;
   font-size: 20px;
-  padding-left: 3.3em;
 }
 
-/* do this when screen is small (what you previously had) */
+/* show this layout when the screen is less than or equal to 1024px in width */
 @media only screen and (max-width: 1024px) {
 
   nav {
@@ -56,7 +62,7 @@ nav {
   }
 }
 
-/* do this when screen size is big (the yellow is on the side) */
+/* show this layout when the screen is equal to or greater than 1025px in width */
 @media only screen and (min-width: 1025px){
 
 .orientation {
