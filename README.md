@@ -18,5 +18,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot description"] (URL) 
-!["Screenshot description"] (URL) 
+!["Screenshot description"] (https://github.com/kenny-tse/tweeter/blob/master/public/screenshots/tweeter-big.PNG?raw=true) 
+!["Screenshot description"] (https://github.com/kenny-tse/tweeter/blob/master/public/screenshots/tweeter-small.PNG?raw=true) 
