@@ -110,6 +110,9 @@ $(document).ready(function () {
 
     $textAreaToShow.val("");
 
+    $numberToShow = $(".counter")
+    $numberToShow.val(140);
+
     $errorMessage.slideUp(200)
 
     loadTweets();
