@@ -105,16 +105,20 @@ $(document).ready(function () {
     $.ajax({
       url: url,
       method: "POST",
-      data: queryString
+      data: queryString,
+      //waiting for data because ajax is asynchronous
+      success: function (data) {
+        loadTweets();
+      },
+      error: function (error) {
+        console.log(error)
+      }
     })
 
     $textAreaToShow.val("");
-
     $numberToShow = $(".counter")
     $numberToShow.val(140);
 
     $errorMessage.slideUp(200)
-
-    loadTweets();
   });
 });
